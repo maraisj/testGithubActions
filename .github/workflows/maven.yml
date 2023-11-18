@@ -32,10 +32,10 @@ jobs:
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v1
       with:
-       username: ${{ secrets.DOCKER_HUB_USERNAME }}
-       password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-       repository: maraisjo/testgithubactions
-       tags: ${{github.run_number}}
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        repository: maraisjo/testgithubactions
+        tags: ${{github.run_number}}
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
